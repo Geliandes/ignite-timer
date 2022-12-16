@@ -34,6 +34,6 @@ export const Separator = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    width: 1rem;
+    width: 1.5rem;
   }
 `
