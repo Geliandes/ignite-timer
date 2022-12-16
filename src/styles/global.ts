@@ -28,4 +28,14 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 1rem;
     }
+
+    @media (max-width: 768px) {
+    html{
+        font-size: 87.5%
+    }
+
+    body{
+        
+    }
+}
 `

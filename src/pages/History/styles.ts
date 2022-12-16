@@ -11,6 +11,14 @@ export const HistoryContainer = styled.main`
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1rem;
+    }
+    padding: 0;
+    padding-top: 1rem;
+  }
 `
 
 export const HistoryList = styled.div`
@@ -59,8 +67,34 @@ export const HistoryList = styled.div`
       }
     }
   }
-`
 
+  @media (max-width: 768px) {
+    table {
+      min-width: 400px;
+
+      th {
+        &:first-child {
+          padding-left: 1rem;
+        }
+
+        &:last-child {
+          padding-right: 1rem;
+        }
+      }
+
+      td {
+        &:first-child {
+          width: 20%;
+          padding-left: 1rem;
+        }
+
+        &:last-child {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+`
 const STATUS_COLORS = {
   yellow: 'yellow-500',
   green: 'green-500',

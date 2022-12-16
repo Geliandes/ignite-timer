@@ -10,6 +10,10 @@ export const FormContainer = styled.div`
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `
 
 const BaseInput = styled.input`
@@ -29,6 +33,11 @@ const BaseInput = styled.input`
   &:focus {
     box-shadow: none;
     border-color: ${(props) => props.theme['green-500']};
+  }
+
+  @media (max-width: 768px) {
+    justify-content: start;
+    font-size: 0.9rem;
   }
 `
 
